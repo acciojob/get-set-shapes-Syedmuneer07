@@ -1,6 +1,6 @@
 //complete this code
-class Rectangle {
-	constructor(width,height){
+lass Rectangle {
+	constructor(width, height){
 		this._width= width;
 		this._height=height;
 	
@@ -11,12 +11,16 @@ get width(){
 get height(){
 	return this._height;
 }
+getArea(){
+    return this._width*this._height;
+}
 }
 
 class Square extends Rectangle {
 	constructor(side){
-		super(side,side);
-		
+		super(side, side);
+        
+	
 	}
 getPerimeter(){
 	return 4*this._width;
@@ -34,7 +38,6 @@ console.log(square.width); // Output: 7
 console.log(square.height); // Output: 7
 console.log(square.getArea()); // Output: 49
 console.log(square.getPerimeter()); // Output: 28
-
 
 // Do not change the code below this line
 window.Rectangle = Rectangle;
